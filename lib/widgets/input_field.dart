@@ -13,9 +13,9 @@ class InputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        icon: Icon(icon,color: Colors.white,),
+        icon: Icon(icon,color: Colors.white, size: 30,),
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.white),
+        hintStyle: TextStyle(fontSize: 25, color: Colors.white),
         //mudar a cor quando clica
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.white)
@@ -27,7 +27,7 @@ class InputField extends StatelessWidget {
           top: 12
         )
       ),
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
       obscureText: obscure,
     );
   }

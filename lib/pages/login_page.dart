@@ -14,17 +14,18 @@ class LoginPage extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: <Widget>[
+        Image.asset("assets/fundo.jpg",fit: BoxFit.cover,
+        height: 1000,),
         Container(),
         SingleChildScrollView(
           child: Container(
             margin: EdgeInsets.all(16),
-
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 //imagem da logo
                 Image.asset(
-                  "assets/labex.png",
+                  "assets/labex2.png",
                   scale: 0.5,
                 ),
 
@@ -46,6 +47,7 @@ class LoginPage extends StatelessWidget {
                   icon: Icons.lock_outline,
                   hint: "Senha",
                   obscure: true,
+                  
                 ),
 
                 SizedBox(
@@ -53,10 +55,10 @@ class LoginPage extends StatelessWidget {
                 ),
 
                 SizedBox(
-                  height: 45,
+                  height: 40,
                   child: RaisedButton(              
                     color: Color.fromRGBO(39, 137, 140, 100),
-                    child: Text("Entrar"),
+                    child: Text("Entrar", style: TextStyle(fontSize: 20),),
                     onPressed: () {},
                     textColor: Colors.white,
                   ),
