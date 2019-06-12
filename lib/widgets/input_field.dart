@@ -23,8 +23,8 @@ class InputField extends StatelessWidget {
         contentPadding: EdgeInsets.only(
           left: 5,
           right: 5,
-          bottom: 15,
-          top: 15
+          bottom: 12,
+          top: 12
         )
       ),
       style: TextStyle(color: Colors.white),
